@@ -1,0 +1,31 @@
+{
+  "name": "ntu-bus-arrival-bot",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "https://github.com/yeukfei02/ntu-bus-arrival-bot.git",
+  "author": "Donald Wu <yeukfei02@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "lodash": "^4.17.21",
+    "node-telegram-bot-api": "^0.56.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "git-cz": "^4.8.0",
+    "husky": "^7.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "standard-version": "^9.3.2"
+  },
+  "scripts": {
+    "dev": "NOVE_ENV=development nodemon index.js",
+    "start": "NOVE_ENV=production node index.js",
+    "lint": "eslint . --quiet --fix",
+    "commit": "git-cz",
+    "release": "standard-version",
+    "prepare": "husky install"
+  }
+}
