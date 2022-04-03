@@ -205,6 +205,11 @@ async function showBusShopDetails(msg, type) {
       }
     );
 
+    await bot.sendMessage(
+      msg.chat.id,
+      `Or back to main menu by typing/clicking /start`
+    );
+
     bot.on("message", async (msg) => {
       await showBusArrivals(msg, busStopDetails);
     });
@@ -258,6 +263,11 @@ async function showBusArrivals(msg, busStopDetails) {
               );
             }
           }
+
+          await bot.sendMessage(
+            msg.chat.id,
+            `Or back to main menu by typing/clicking /start`
+          );
         }, 500);
       }
     }
