@@ -22,8 +22,6 @@ $ yarn run start
 $ yarn run lint
 ```
 
-Open <http://t.me/ntu_bus_arrival_bot>
-
 ## Example command
 
 Show all example command
